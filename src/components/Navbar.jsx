@@ -7,12 +7,10 @@ import NavDrawer from "./Drawer";
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleMenuToggle = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+
   return (
-    <div className='px-6 py-4 max-w-screen-xl sm:px-10 sm:py-5 flex justify-between text-white font-["Montserrat"]'>
-      <div className="w-48 sm:w-44">
+    <div className='w-full flex justify-between text-white font-["Montserrat"] items-center'>
+      <div className="w-33 h-7 sm:w-44">
         <img src={logo} alt="logo" className="w-full h-full object-cover" />
       </div>
       <div className="sm:hidden">
@@ -23,7 +21,7 @@ function Navbar() {
           to={"/"}
           className={({ isActive }) => (isActive ? `${styles.active}` : "")}
         >
-          Home
+          Home  
         </NavLink>
         <NavLink
           to={"/about"}

@@ -1,0 +1,11 @@
+.active {
+  color: #80AF81;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.normal{
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
+}
